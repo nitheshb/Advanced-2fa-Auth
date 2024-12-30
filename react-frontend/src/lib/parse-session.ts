@@ -1,5 +1,5 @@
-// import UAParser from "ua-parser-js";
-const UAParser = require('ua-parser-js');
+import UAParser from "ua-parser-js";
+// const UAParser = require('ua-parser-js');
 import { format, formatDistanceToNowStrict, isPast } from "date-fns";
 import { Smartphone, Laptop } from "lucide-react";
 
