@@ -1,4 +1,3 @@
-import React from "react";
 import SessionItem from "./SessionItem";
 
 const Sessions = () => {

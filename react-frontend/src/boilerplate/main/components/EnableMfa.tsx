@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import { z } from "zod";
 import { Copy } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -44,7 +44,9 @@ const EnableMfa = () => {
     },
   });
 
-  function onSubmit(data: z.infer<typeof FormSchema>) {}
+  function onSubmit(data: z.infer<typeof FormSchema>) {
+    console.log(data);
+  }
 
   return (
     <div className="via-root to-root rounded-xl bg-gradient-to-r p-0.5">

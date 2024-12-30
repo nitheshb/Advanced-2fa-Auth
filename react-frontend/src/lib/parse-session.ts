@@ -1,21 +1,22 @@
-import UAParser from "ua-parser-js";
+// import UAParser from "ua-parser-js";
+const UAParser = require('ua-parser-js');
 import { format, formatDistanceToNowStrict, isPast } from "date-fns";
-import { Smartphone, Laptop, LucideIcon } from "lucide-react";
+import { Smartphone, Laptop } from "lucide-react";
 
-type DeviceType = "desktop" | "mobile";
+// type DeviceType = "desktop" | "mobile";
 
-interface SessionInfo {
-  deviceType: string;
-  browser: string;
-  os: string;
-  timeAgo: string;
-  icon: LucideIcon;
-}
+// interface SessionInfo {
+//   deviceType: string;
+//   browser: string;
+//   os: string;
+//   timeAgo: string;
+//   icon: LucideIcon;
+// }
 
 export const parseSession = (
   userAgent: string,
   createdAt: string
-): SessionInfo => {
+): any => {
   const parser = new UAParser(userAgent);
   const result = parser.getResult();
 

@@ -1,16 +1,12 @@
-import React from "react";
 import {
-  ChevronsUpDown,
   EllipsisIcon,
   Home,
   Lock,
   LogOut,
-  MoonIcon,
   MoonStarIcon,
   Settings,
   User,
 } from "lucide-react";
-import Link from "next/link";
 import {
   Sidebar,
   SidebarHeader,
@@ -66,12 +62,12 @@ const Asidebar = () => {
         <div className="flex h-[60px] items-center">
           <Logo fontSize="20px" size="30px" url="/home" />
           {open && (
-            <Link
+            <a
               href="/home"
               className="hidden md:flex ml-2 text-xl tracking-[-0.16px] text-black dark:text-[#fcfdffef] font-bold mb-0"
             >
-              Squeezy
-            </Link>
+              2FAuth
+            </a>
           )}
         </div>
       </SidebarHeader>
